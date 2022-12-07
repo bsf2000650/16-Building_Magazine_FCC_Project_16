@@ -21,57 +21,260 @@
       }
       body{
           background-color: rgb(7, 27, 45);
+          font-family: 'Baskervville', serif;
       }
       main{
-        border: 2px solid white;
+        /* border: 2px solid white; */
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 80%;
-        height: 700px;
       }
       header{
-        border: 2px solid white;
-        /* width: 79%; */
-        height: 300px;
+        /* border: 2px solid white; */
         grid-template-rows: repeat(3, 1fr) ;
         grid-column: 1/-1;
       }
       .image{
-        border: 2px solid white;
-        height: 100px;
+        /* border: 2px solid white; */
       }
-      h1{
-        border: 2px solid white;
-        height: 50px;
+      h1, .subtitle{
+        /* border: 2px solid white; */
+        text-align: center;
+        color: orangered;
+        font-size: 50px;
+        font-weight: bolder;
+        /* font-family:Georgia, 'Times New Roman', Times, serif; */
       }
       p{
-        border: 2px solid white;
-        height: 20px;
+        font-size: 18px;
+        /* display: inline; */
+        /* border: 2px solid white; */
+        color: white;
+      }
+      .subtitle{
+        /* border: 2px solid white; */
+        font-size: 23px;
       }
       .author{
-        border: 2px solid white;
-        height: 20px;
+        /* border: 2px solid white; */
         display: grid;
         grid-template-columns: repeat(2,1fr);
       }
-      .author-info, .author-social-contact{
-        border: 2px solid white;
-        height: 20px;
+      .author-info{
+        /* border: 2px solid white; */
+        color: white;
+        font-size: inherit;
+        text-align: left;
+        grid-template-rows: repeat(2, 1fr);
       }
+      .publishing-date{
+        color: gray;
+        text-align: left;
+        font-size: 15px;
+      }
+      .author-social-contact{
+        /* border: 2px solid white; */
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        align-items: center;
+      }
+      .linkedin{
+        /* border: 2px solid white; */
+      }
+      .text{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-width: 25rem;
+        grid-column: 1/-1;
+        column-gap: 10px;
+        text-align: justify;
+        /* line-height: 1.6rem; */
+         /* height: 300px; */
+        /* border: 2px solid white; */
+        color: white;
+      }
+      .history{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-column: 1/-1;
+        row-gap: 5px;
+        margin-top: 15px;
+      }
+      ul{
+        /* border: 2px solid white; */
+      }
+      li{
+        /* border: 2px solid white; */
+        list-style-type: none;
+      }
+      .image-1, .image-3{
+        /* // height: 150px; */
+        /* border: 2px solid yellow; */
+        grid-column: 1/-1;
+        width: 100%;
+        object-fit: cover;
+      }
+      .image-2{
+        /* // height: 150px; */
+        grid-column: 1/2;
+        /* border: 2px solid yellow; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .millions-of-people{
+        /* // height: 150px; */
+        grid-column: 2/3;
+        border: 2px solid lightgreen;
+      }  
+      .images-section{
+        display: grid;
+        grid-column: 2/-1;
+        grid-template-columns: repeat(2, 1fr);
+        /* border: 2px solid white; */
+      }
+      .freecodecamp-logo{
+        width: 100%;
+         height: 500px;
+        object-fit: cover;
+      }
+      .publishing-date{
+        font-size: 18px;
+      }
+      .freecodecamp-link{
+        text-decoration: none;
+        color: white;
+      }
+      a:hover{
+        background-color: green;
+      }
+      i{
+        /* border: 2px solid white; */
+        text-align: center;
+        color: white;
+        vertical-align: middle;
+        font-size: 30px;
+      }
+      .quote {
+        color: #00beef;
+        font-size: 2.4rem;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        /* border: 2px solid white; */
+        }
+        h2, h3, h4, h5, h6 {
+          font-family: 'Raleway', sans-serif;
+          color: white;
+        }
+        h3,h4{
+          color: #00beef;
+        }
     </style>
 </head>
 <body>
   <main>
     <header>
-      <div class="image"></div>
-      <h1></h1>
-      <p></p>
+      <img class="freecodecamp-logo" src="/images/freeCodeCamp-logo.png" loading="lazy">
+      <h1>OUR NEW CURRICULUM</h1>
+      <p class="subtitle">Our efforts to restructure our curriculum with a more project-based focus</p>
       <div class="author">
-        <div class="author-info"></div>  
-        <div class="author-social-contact"></div>  
+        <div class="author-info">
+        <p>By <a class="freecodecamp-link" href="">freeCodeCamp</a></p>
+        <p class="publishing-date">December 7, 2022</p>
+      </div>
+        <div class="author-social-contact">
+            <a href="https://www.facebook.com/freecodecamp/">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/freecodecamp/">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/freecodecamp">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/school/free-code-camp/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.youtube.com/freecodecamp">
+              <i class="fab fa-youtube"></i>
+            </a> 
       </div>
     </header>
+
+    <section class="text">
+      <p class="first-paragraph">
+        Soon the freeCodeCamp curriculum will be 100% project-driven learning. Instead of a series of coding challenges, you'll learn through building projects - step by step. Before we get into the details, let me emphasize: we are not changing the certifications. All 6 certifications will still have the same 5 required projects. We are only changing the optional coding challenges.
+      </p>
+      <p>
+        After years - years - of pondering these two problems and how to solve them, I slipped, hit my head on the sink, and when I came to I had a revelation! A vision! A picture in my head! A picture of this! This is what makes time travel possible: the flux capacitor!
+      </p>
+      <p>
+        It wasn't as dramatic as Doc's revelation in Back to the Future. It
+        just occurred to me while I was going for a run. The revelation: the entire curriculum should be a series of projects. Instead of individual coding challenges, we'll just have projects, each with their own seamless series of tests. Each test gives you just enough information to figure out how to get it to pass. (And you can view hints if that isn't enough.)
+      </p>
+      <blockquote>
+        <hr />
+        <p class="quote">
+          The entire curriculum should be a series of projects
+        </p>
+        <hr>
+      </blockquote><p>
+        No more walls of explanatory text. No more walls of tests. Just one
+        test at a time, as you build up a working project. Over the course of passing thousands of tests, you build up projects and your own understanding of coding fundamentals. There is no transition between lessons and projects, because the lessons themselves are baked into projects. And there's plenty of repetition to help you retain everything because - hey - building projects in real life has plenty of repetition.
+      </p>
+      <p>
+        The main design challenge is taking what is currently paragraphs of explanation and instructions and packing them into a single test description text. Each project will involve dozens of tests like this. People will be coding the entire time, rather than switching back and forth from "reading mode" to "coding mode".
+      </p>
+      <p>
+        Instead of a series of coding challenges, people will be in their code editor passing one test after another, quickly building up a project. People will get into a real flow state, similar to what they experience when they build the required projects at the end of each certification. They'll get that sense of forward progress right from the beginning. And freeCodeCamp will be a much smoother experience.
+      </p>
+    </section>
+    <section class="history">
+      <article>
+        <h3>A Brief history</h3>
+        <p>Of the Curriculum</p>
+        <p></p>
+        <ul>
+          <li>
+            <h4>V1 - 2014</h4>
+            <p>We launched freeCodeCamp with a simple list of 15 resources, including Harvard's CS50 and Stanford's Database Class.</p>
+          </li>
+          <li>
+            <h4>V2 - 2015</h4>
+            <p>We added interactive algorithm challenges.</p>
+          </li>
+          <li>
+            <h4>V3 - 2015</h4>
+            <p>We added our own HTML+CSS challenges (before we'd been relying on General Assembly's Dash course for these).</p>
+          </li>
+          <li>
+            <h4>V4 - 2016</h4>
+            <p>We expanded the curriculum to 3 certifications, including Front End, Back End, and Data Visualization. They each had 10 required projects, but only the Front End section had its own challenges. For the other certs, we were still using external resources like Node School.</p>
+          </li>
+          <li>
+            <h4>V5 - 2017</h4>
+            <p>We added the back end and data visualization challenges.</p>
+          </li>
+          <li>
+            <h4>V6 - 2018</h4>
+            <p>We launched 6 new certifications to replace our old ones. This was the biggest curriculum improvement to date.</p>
+          </li>
+        </ul>
+      </article>
+      <div class="images-section">
+          <img class="image-1" src="/images/random-quote-machine.png" alt="random-quote-machine">
+          <img class="image-2" src="/images/calc.png" alt="calc"> 
+          <blockquote>
+            <hr />
+            <p class="quote">
+              The millions of people who are learning to code through freeCodeCamp will have an even better resource to help them learn these fundamentals.
+            </p>
+            <hr>
+          </blockquote><p></p>
+        <img class="image-3" src="/images/survey-form-background.jpeg" alt="survey-form-background">
+      </div>
+    </section>
   </main>
 </body>
 </html>
