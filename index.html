@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    /> 
+    <style>
+      *,::after,::before{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+          background-color: rgb(7, 27, 45);
+      }
+      main{
+        border: 2px solid white;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 80%;
+        height: 700px;
+      }
+      header{
+        border: 2px solid white;
+        /* width: 79%; */
+        height: 300px;
+        grid-template-rows: repeat(3, 1fr) ;
+        grid-column: 1/-1;
+      }
+      .image{
+        border: 2px solid white;
+        height: 100px;
+      }
+      h1{
+        border: 2px solid white;
+        height: 50px;
+      }
+      p{
+        border: 2px solid white;
+        height: 20px;
+      }
+      .author{
+        border: 2px solid white;
+        height: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      }
+      .author-info, .author-social-contact{
+        border: 2px solid white;
+        height: 20px;
+      }
+    </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="image"></div>
+      <h1></h1>
+      <p></p>
+      <div class="author">
+        <div class="author-info"></div>  
+        <div class="author-social-contact"></div>  
+      </div>
+    </header>
+  </main>
+</body>
+</html>
